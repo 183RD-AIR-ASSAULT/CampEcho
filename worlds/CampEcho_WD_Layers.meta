@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2E0A4587657F2A27}worlds/CampEcho_WD_Layers"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

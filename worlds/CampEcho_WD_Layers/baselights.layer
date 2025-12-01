@@ -1,3 +1,12 @@
+$grp GenericEntity : "{B9F8987A84B94738}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_03/LampStreet_E_03_addon.et" {
+ {
+  coords 6740 5.76 3645
+ }
+ {
+  coords 6795 5.72 3685
+  angles 0 90 0
+ }
+}
 $grp GenericEntity : "{F4EC6F567BBB6D70}PrefabsEditable/Auto/Structures/Infrastructure/Lamps/LampStreet_E_03/E_LampStreet_E_03_single.et" {
  {
   coords 6662 0.071 4394.54

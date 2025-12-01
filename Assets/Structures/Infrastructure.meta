@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{27FE54B9E9DE3E56}Assets/Structures/Infrastructure"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

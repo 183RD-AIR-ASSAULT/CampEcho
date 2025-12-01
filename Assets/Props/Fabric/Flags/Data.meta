@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A1E7D2FB57F2534F}Assets/Props/Fabric/Flags/Data"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}

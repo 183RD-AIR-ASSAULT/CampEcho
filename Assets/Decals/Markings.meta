@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{DE249E1C84E688A3}Assets/Decals/Markings"
+ Configurations {
+  FolderResourceClass PC {
+  }
+  FolderResourceClass XBOX_ONE : PC {
+  }
+  FolderResourceClass XBOX_SERIES : PC {
+  }
+  FolderResourceClass PS4 : PC {
+  }
+  FolderResourceClass PS5 : PC {
+  }
+  FolderResourceClass HEADLESS : PC {
+  }
+ }
+}
