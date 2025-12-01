@@ -195,7 +195,7 @@ StaticModelEntity : "{6A004A8F0571D456}Prefabs/Structures/Infrastructure/Towers/
  scale 4.94
 }
 SCR_DestructibleBuildingEntity : "{860C39850EF0755E}Prefabs/Structures/Infrastructure/Waterworks/WaterTower_02/WaterTower_USSR_02_tall.et" {
- coords 3457.833 0 5972.361
+ coords 3471.424 -0.434 6074.072
  scale 2.71
 }
 $grp GenericEntity : "{8D42C046CCA42026}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Line_2x30.et" {

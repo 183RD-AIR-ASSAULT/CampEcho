@@ -2800,7 +2800,7 @@ $grp SplineShapeEntity {
     Position 1.656 0 0
    }
    ShapePoint "{666CCDF67D7EB744}" {
-    Position -337.988 -0.303 0
+    Position -486.807 0 0
    }
   }
   {
@@ -2816,7 +2816,7 @@ $grp SplineShapeEntity {
         Position 1.656 0 0
        }
        ShapePoint "{556C6554868CB0CE}" {
-        Position -337.988 -0.303 0
+        Position -486.807 0 0
        }
       }
       IsClosedSpline 0
@@ -3269,7 +3269,7 @@ $grp SplineShapeEntity {
     Position -5.395 0 0
    }
    ShapePoint "{666CF418B328523B}" {
-    Position -342.7 0.125 0
+    Position -480.52 0 0
    }
   }
   {
@@ -3284,7 +3284,7 @@ $grp SplineShapeEntity {
         Position -5.395 0 0
        }
        ShapePoint "{556C6554868CB0CE}" {
-        Position -342.7 0.125 0
+        Position -480.52 0 0
        }
       }
       IsClosedSpline 0
@@ -3678,6 +3678,72 @@ $grp SplineShapeEntity {
    }
   }
  }
+ {
+  coords 3253.853 539.375 5844.3
+  Points {
+   ShapePoint "{6702CEEBAB8F50C0}" {
+    Position 0 0 -7.471
+   }
+   ShapePoint "{6702CEEBAB8F3660}" {
+    Position 0 0 144.783
+   }
+  }
+  {
+   RoadGeneratorEntity : "{6EFBB8BA8D28B57D}PrefabLibrary/DefaultLibrary/Generators/Roads/Asphalt/RG_Road_Asphalt_E_02.et" {
+    coords 0 0 0
+    RoadClearance 11
+    RoadWidth 12
+    {
+     RoadEntity {
+      ID "556C6C02C8F45A73"
+      SplinePoints {
+       ShapePoint "{556C6C02BD077CFC}" {
+        Position 0 0 -7.471
+       }
+       ShapePoint "{556C6C02BD077389}" {
+        Position 0 0 144.783
+       }
+      }
+      IsClosedSpline 0
+      Width 12
+      BeginningPiece "1st version"
+      EndPiece "1st version"
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 3329.444 539.719 5988.595
+  Points {
+   ShapePoint "{6702CEEAC2034BCC}" {
+    Position 0 0 0
+   }
+   ShapePoint "{6702CEEAC203173B}" {
+    Position 0 0 -37.968
+   }
+  }
+  {
+   RoadGeneratorEntity : "{6EFBB8BA8D28B57D}PrefabLibrary/DefaultLibrary/Generators/Roads/Asphalt/RG_Road_Asphalt_E_02.et" {
+    coords 0 0 0
+    {
+     RoadEntity {
+      ID "556C6C02C8F45A73"
+      SplinePoints {
+       ShapePoint "{556C6C02BD077CFC}" {
+        Position 0 0 0
+       }
+       ShapePoint "{556C6C02BD077389}" {
+        Position 0 0 -37.968
+       }
+      }
+      IsClosedSpline 0
+      Width 8
+     }
+    }
+   }
+  }
+ }
 }
 GenericEntity : "{09640FDD060CBB63}Prefabs/Structures/Industrial/Industrial Complex 01 Furniture.et" {
  coords 3710 538.594 6033
@@ -3690,6 +3756,9 @@ SCR_DestructibleBuildingEntity : "{1F5DE8371A7EA3B1}Prefabs/Structures/Industria
 }
 SCR_DestructibleBuildingEntity : "{22BF82936E1BBC4D}PrefabLibrary/DefaultLibrary/Structures/Services/FireStation_E_01.et" {
  coords 3520 -0.094 5970
+}
+SCR_DestructibleBuildingEntity : "{2B636AE328587F92}PrefabLibrary/CainLibrary/Structures/Houses/Apartment/ApartmentPrefab_USSR_5I01_gray.et" {
+ coords 3313 0.025 5967
 }
 SCR_DestructibleBuildingEntity : "{30DBC2CF10A98D85}Prefabs/Structures/Commerical/Pub Rural.et" {
  coords 3418.88 0 5968.4
@@ -3730,8 +3799,19 @@ $grp SCR_DestructibleBuildingEntity : "{3E4B10C1910CA05A}Prefabs/Structures/Indu
   angles 0 180 0
  }
 }
-SCR_DestructibleBuildingEntity : "{4BB3C0291333467A}Prefabs/Structures/Industrial/IndustrialComplex 02.et" {
- coords 3671.354 0.002 6023.039
+SCR_DestructibleBuildingEntity : "{41C5165E46EEBE30}PrefabLibrary/CainLibrary/Structures/Houses/Apartment/ApartmentBuilding_USSR_5I01.et" {
+ coords 3363 -0.023 5967
+}
+$grp SCR_DestructibleBuildingEntity : "{4BB3C0291333467A}Prefabs/Structures/Industrial/IndustrialComplex 02.et" {
+ {
+  coords 3671.354 0.002 6023.039
+ }
+ {
+  coords 3627.667 0.001 6076.419
+ }
+}
+SCR_DestructibleBuildingEntity : "{548FB6C52ACF593E}PrefabLibrary/CainLibrary/Structures/Houses/Apartment/ApartmentBuilding_USSR_3I01.et" {
+ coords 3283 -0.422 5967
 }
 $grp SCR_DestructibleBuildingEntity : "{5631CE822A8D7B1E}Prefabs/Structures/Houses/Village/Garages/Civilian Garages 3in1.et" {
  {
@@ -3897,6 +3977,10 @@ SCR_DestructibleBuildingEntity : "{8305185CB71AEA84}Prefabs/Structures/Industria
 SCR_DestructibleBuildingEntity : "{A6AEE9571CB62BEF}PrefabLibrary/DefaultLibrary/Structures/Commercial/ShopModern_E_01.et" {
  coords 3592.082 0.051 5968.996
 }
+SCR_DestructibleBuildingEntity : "{AB403915BEDA08F5}PrefabLibrary/CainLibrary/Structures/Houses/Apartment/ApartmentBuilding_USSR_2I02_white.et" {
+ coords 3375 -0.002 5920
+ angles 0 90 0
+}
 SCR_DestructibleBuildingEntity : "{AC16E15E979F9072}PrefabLibrary/DefaultLibrary/Structures/Services/Villa_E_2I01_Police.et" {
  coords 3493 0.25 5970
 }
@@ -3935,8 +4019,7 @@ SCR_DestructibleBuildingEntity : "{BFD341B4254C64D6}Prefabs/Structures/Industria
  }
 }
 SCR_DestructibleBuildingEntity : "{C3085C63B543921D}Prefabs/Structures/Houses/Town/School.et" {
- Flags 0x403 0x80000
- coords 3566 539.375 5895
+ coords 3565.584 5.704 5895.158
 }
 $grp GenericEntity : "{C722FED65040EF5E}Prefabs/Structures/Houses/Village/Garages/Civilian Garages 3in1 Furniture.et" {
  {
@@ -3972,6 +4055,10 @@ $grp SCR_DestructibleBuildingEntity : "{CB01B5B68D9EF4C4}PrefabLibrary/DefaultLi
   coords 3640 0.5 5932.875
  }
 }
+SCR_DestructibleBuildingEntity : "{D01EDD61FA118809}PrefabLibrary/CainLibrary/Structures/Houses/Apartment/ApartmentBuilding_USSR_2I02_yellow.et" {
+ coords 3375 0 5880
+ angles 0 90 0
+}
 $grp SCR_DestructibleBuildingEntity : "{D288E1E16D11D57B}PrefabLibrary/DefaultLibrary/Structures/Houses/House_Town_E_2I03.et" {
  {
   coords 3645.261 0 5859.246
@@ -3986,11 +4073,13 @@ $grp SCR_DestructibleBuildingEntity : "{D288E1E16D11D57B}PrefabLibrary/DefaultLi
   angles 0 180 0
  }
 }
-GenericEntity : "{D53510B9907CBCF9}Prefabs/Structures/Houses/Town/School Furnitures.et" {
- coords 3566 544.375 5895
-}
-SCR_DestructibleBuildingEntity : "{DE1C2F3654ED757D}Prefabs/Structures/Industrial/Industrial complex 01.et" {
- coords 3710 -0.006 6033
+$grp SCR_DestructibleBuildingEntity : "{DE1C2F3654ED757D}Prefabs/Structures/Industrial/Industrial complex 01.et" {
+ {
+  coords 3710 -0.006 6033
+ }
+ {
+  coords 3495.688 0 6063.98
+ }
 }
 SCR_DestructibleBuildingEntity : "{E889E8CCCA21EC6C}PrefabLibrary/DefaultLibrary/Structures/Commercial/PubVillage_E_2L01.et" {
  coords 3724.35 -0.111 5969.5
