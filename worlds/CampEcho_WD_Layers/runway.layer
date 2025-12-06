@@ -10584,6 +10584,15 @@ $grp RoadGeneratorEntity : "{0CDA4ABE0A49F91C}PrefabLibrary/DefaultLibrary/Gener
   }
  }
 }
+$grp GenericEntity : "{143046CEE500BC8B}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Letter_C.et" {
+ {
+  coords 6105 600.1 3414
+ }
+ {
+  coords 6105 600.1 3440
+  angles 0 180 0
+ }
+}
 $grp GenericEntity : "{3C27BF2D94E61103}PrefabLibrary/DefaultLibrary/Infrastructure/Lamps/LampStreet_E_02_doubleStraight/LampStreet_E_02_doubleStraight.et" {
  {
   coords 6772 0 3529.163
@@ -10731,6 +10740,15 @@ $grp GenericEntity : "{87E7900B7AB4D3A1}PrefabLibrary/DefaultLibrary/Decals/Runw
  {
   coords 6000 600.025 4510
   angles 0 90 0
+ }
+}
+$grp GenericEntity : "{8BC44047033C398E}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Letter_L.et" {
+ {
+  coords 6105 600.1 3008.161
+ }
+ {
+  coords 6105 600.1 3032
+  angles 0 180 0
  }
 }
 $grp GenericEntity : "{8D42C046CCA42026}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Line_2x30.et" {
@@ -10926,6 +10944,32 @@ $grp StaticModelEntity : "{C9ADC723088689F3}PrefabLibrary/DefaultLibrary/Structu
  }
  {
   coords 6510 599.969 3640
+ }
+}
+$grp StaticModelEntity : "{E95CB8F4C4B2C210}Prefabs/Decals/Markings/Runway/Decal_Helipad_01.et" {
+ {
+  coords 6105 600.001 3020
+ }
+ {
+  coords 6105 600.001 3427.295
+ }
+ {
+  coords 6104.124 600.001 3806.904
+ }
+ {
+  coords 6580 599.969 3739.095
+ }
+ {
+  coords 6550 599.969 3739.095
+ }
+}
+$grp GenericEntity : "{F6DCACBF66AF0517}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Letter_R.et" {
+ {
+  coords 6105 600.1 3794
+ }
+ {
+  coords 6105 600.1 3820
+  angles 0 180 0
  }
 }
 GenericEntity : "{FD4C14A1D12B5788}PrefabLibrary/DefaultLibrary/Decals/Runway/Runway_Num8.et" {

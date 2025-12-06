@@ -968,7 +968,7 @@ $grp GenericEntity {
     PixelSizeScale 0.73
    }
   }
-  coords 3829.471 543.692 6003.166
+  coords 3825.585 543.692 5999.947
   angles 0 -58.865 0
   scale 0.093
  }
@@ -989,28 +989,7 @@ $grp GenericEntity {
     PixelSizeScale 0.73
    }
   }
-  coords 3207.678 540.188 5974.278
-  angles 0 122.874 0
-  scale 0.093
- }
- {
-  components {
-   MaterialParamsComponent "{66EB2201FEBCC1D5}" {
-    ColorAlbedo 0.491 0.491 0.491 1
-    ColorEmissive 0.6376 0.6376 0.6376 1
-   }
-   MeshObject "{66EB2206ACFE2D59}" {
-    Object "{AEAB1E89AE509953}Assets/billboard183/roadsign.xob"
-    Materials {
-     MaterialAssignClass "{66EB22267656A953}" {
-      SourceMaterial "billboard_Mat"
-      AssignedMaterial "{511D0020B3D5F82D}Assets/billboard183/mount.emat"
-     }
-    }
-    PixelSizeScale 0.73
-   }
-  }
-  coords 3207.678 540.188 5974.278
+  coords 3210.129 540.188 5978.07
   angles 0 122.874 0
   scale 0.093
  }

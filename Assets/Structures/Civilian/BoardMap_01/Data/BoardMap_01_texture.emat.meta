@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{645FEA52DCCE48B2}Assets/Structures/Civilian/BoardMap_01/Data/BoardMap_01_texture.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

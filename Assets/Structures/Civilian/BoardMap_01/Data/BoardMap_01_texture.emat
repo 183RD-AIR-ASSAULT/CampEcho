@@ -1,0 +1,10 @@
+MatPBRBasic {
+ Color 0.266 0.266 0.266 1
+ EmissiveLV -0.536
+ TITemperature1 78.16
+ AlphaMul 1.839
+ MetalnessScale 0
+ DielectricReflectance 0.02
+ BCRMap "{058252032373FEE1}Assets/signs/fasttravle.edds"
+ NMOMap "{BF01E1B43C02A88C}Assets/Structures/Civilian/BoardMap_01/Data/BoardMap_01_NMO.edds"
+}

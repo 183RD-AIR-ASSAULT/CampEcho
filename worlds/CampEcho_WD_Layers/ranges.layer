@@ -26147,7 +26147,7 @@ $grp SplineShapeEntity {
   }
  }
  {
-  coords 8022 599.969 2396.5
+  coords 8020 599.969 2396.5
   Points {
    ShapePoint "{6696E3A69879E8D4}" {
     Position 0 0 0
@@ -29236,32 +29236,6 @@ GenericEntity : "{795FA7C8067E60E0}PrefabLibrary/DefaultLibrary/Props/Forest/Woo
  coords 3527.856 516.647 5360.108
  angles 3.562 0 -6.234
 }
-$grp GenericEntity : "{8076C9CE59439259}Prefabs/Props/Military/Sandbags/Sandbag_01_empty_base.et" {
- {
-  coords 7999.832 603 2383.025
-  angles 0 -90 0
-  scale 2.8
-  {
-   GenericEntity : "{53EB8BF116A99F3B}Prefabs/Props/Military/Sandbags/Sandbag_01_short_high_base.et" {
-    coords 0.197 0 -0.709
-    angles 0 -92.483 0
-    scale 0.193
-   }
-  }
- }
- {
-  coords 8039.943 603 2383.025
-  angles 0 -90 0
-  scale 2.8
-  {
-   GenericEntity : "{53EB8BF116A99F3B}Prefabs/Props/Military/Sandbags/Sandbag_01_short_high_base.et" {
-    coords 0.197 0 -0.709
-    angles 0 -92.483 0
-    scale 0.193
-   }
-  }
- }
-}
 GenericEntity : "{941E35788EAA7061}Prefabs/Structures/Infrastructure/Kill Houses/Premade Houses/Filled_Rubber_Large_US_01.et" {
  coords 6710 600 4075
 }
@@ -29638,7 +29612,7 @@ $grp GenericEntity : "{DB6A6F1554219C14}PrefabLibrary/DefaultLibrary/Infrastruct
   angles -3.749 0 -2.058
  }
  {
-  coords 6847.322 0.916 2251.068
+  coords 6848.698 0.965 2251.071
   angles -3.749 0 -2.058
  }
  {

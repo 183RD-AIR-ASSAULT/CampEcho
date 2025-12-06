@@ -24267,10 +24267,10 @@ $grp SplineShapeEntity {
   coords 6442.479 599.969 3245.271
   Points {
    ShapePoint "{66FCDC2493393CD9}" {
-    Position 0 -0 6.688
+    Position 0 0 6.688
    }
    ShapePoint "{66FCDC2493390171}" {
-    Position 0 -0 306.546
+    Position 0 0 306.546
    }
   }
   {
@@ -24281,10 +24281,10 @@ $grp SplineShapeEntity {
       ID "5660A9C12F8548A4"
       SplinePoints {
        ShapePoint "{5660A9C1C731D67C}" {
-        Position 0 -0 6.688
+        Position 0 0 6.688
        }
        ShapePoint "{5660A9C1C731D4AC}" {
-        Position 0 -0 306.546
+        Position 0 0 306.546
        }
       }
       IsClosedSpline 0
@@ -24298,10 +24298,10 @@ $grp SplineShapeEntity {
   coords 6353 599.969 3245.271
   Points {
    ShapePoint "{66FCDC2493393CD9}" {
-    Position 0 -0 6.688
+    Position 0 0 6.688
    }
    ShapePoint "{66FCDC2493390171}" {
-    Position 0 -0 306.546
+    Position 0 0 306.546
    }
   }
   {
@@ -24312,10 +24312,10 @@ $grp SplineShapeEntity {
       ID "5660A9C12F8548A4"
       SplinePoints {
        ShapePoint "{5660A9C1C731D67C}" {
-        Position 0 -0 6.688
+        Position 0 0 6.688
        }
        ShapePoint "{5660A9C1C731D4AC}" {
-        Position 0 -0 306.546
+        Position 0 0 306.546
        }
       }
       IsClosedSpline 0
@@ -24377,6 +24377,20 @@ $grp StaticModelEntity : "{18363B6460F6A0CE}PrefabLibrary/DefaultLibrary/Props/A
 SCR_DestructibleBuildingEntity : "{1A4A64AD1C9A15BA}PrefabLibrary/DefaultLibrary/Structures/Airport/ControlTower_01.et" {
  coords 6479.09 0 3524
  angles 0 90 0
+}
+$grp SCR_DestructibleBuildingEntity : "{1A9B605652C152DF}PrefabLibrary/DefaultLibrary/Structures/Industrial/FuelTank_02/FuelTank_02_grey.et" {
+ {
+  coords 6495 0.835 3160
+ }
+ {
+  coords 6495 0.835 3170
+ }
+ {
+  coords 6495 0.835 3165
+ }
+ {
+  coords 6495 0.835 3175
+ }
 }
 SCR_DestructibleBuildingEntity : "{22BF82936E1BBC4D}PrefabLibrary/DefaultLibrary/Structures/Services/FireStation_E_01.et" {
  coords 6500 0.125 3554
@@ -25900,24 +25914,4 @@ $grp StaticModelEntity : "{C9ADC723088689F3}PrefabLibrary/DefaultLibrary/Structu
 GenericEntity : "{D2274CAE9B71368C}PrefabLibrary/DefaultLibrary/Props/Industrial/CargoContainer_01_20ft/CargoContainer_01_20ft_grey.et" {
  coords 6503.308 599.968 3582.255
  angles 0 -89.72 0
-}
-$grp StaticModelEntity : "{E95CB8F4C4B2C210}Prefabs/Decals/Markings/Runway/Decal_Helipad_01.et" {
- {
-  coords 6104.124 600.001 3020.057
- }
- {
-  coords 6104.124 600.001 3427.295
- }
- {
-  coords 6104.124 600.001 3806.904
- }
- {
-  coords 6104.124 600.001 5380.144
- }
- {
-  coords 6580 599.969 3739.095
- }
- {
-  coords 6550 599.969 3739.095
- }
 }

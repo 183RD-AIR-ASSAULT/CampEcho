@@ -1,0 +1,810 @@
+$grp SCR_FiringRangeManager : "{214BCC72DBBE1CB0}Prefabs/Props/Military/Training/FiringRangeManager.et" {
+ {
+  coords 7980 603.031 2383.453
+  {
+   SCR_FiringRangeController {
+    components {
+     SignalsManagerComponent "{626965E278A32E1A}" {
+     }
+     MeshObject "{626965E278A32D9F}" {
+      Object "{AD51E776526588CC}Assets/Structures/Military/Training/RangeCP_01/RangeCP_01.xob"
+     }
+     RigidBody "{626965E278A32DA6}" {
+      ModelGeometry 1
+      Static 1
+     }
+     ProcAnimComponent "{626965E278A32DF1}" {
+      Parameters {
+       ProcAnimParams "{626965E278A32DF3}" {
+        ResourceName "{45EF0AFFC6C42B29}Assets/Structures/Military/Training/RangeCP_01/RangeCP_01.pap"
+        BoneNames {
+         "Number_04"
+         "Number_03"
+         "Number_02"
+         "Number_01"
+         "Number_08"
+         "Number_07"
+         "Number_06"
+         "Number_05"
+         "Button_start"
+        }
+        SimulationDistance 820
+       }
+      }
+     }
+     SCR_SoundDataComponent "{626965E278A32D00}" {
+      m_aAudioSourceConfiguration {
+       SCR_AudioSourceConfiguration "{626965E278A32D1A}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_ROUNDSTART"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D1C}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_ROUNDABORT"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D17}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_STARTBUTTON"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D09}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_CHANGETARGET"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D02}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_CHANGEDISTANCE"
+       }
+      }
+     }
+     SlotManagerComponent "{626965E278A32D23}" {
+      Slots {
+       EntitySlotInfo LightOn {
+        PivotID "light_001_power"
+        Prefab "{56F1E8C98C929662}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_white.et"
+       }
+       EntitySlotInfo LightError {
+        PivotID "light_003_malfunction"
+        Prefab "{E1D83AE676A5F192}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_red.et"
+       }
+       EntitySlotInfo LightSequence {
+        PivotID "light_002_sequence"
+        Prefab "{98F91DBF4663F101}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_green.et"
+       }
+      }
+     }
+     ActionsManagerComponent "{626965E278A32CD3}" {
+      ActionContexts {
+       UserActionContext "{626965E278A32D79}" {
+        ContextName "StartRound"
+        Position PointInfo "{626965E278A32D44}" {
+         PivotID "Button_start"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32D74}" {
+        ContextName "DistanceUp"
+        Position PointInfo "{626965E278A32D75}" {
+         PivotID "button_left_Up"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C9B}" {
+        ContextName "DistanceDown"
+        Position PointInfo "{626965E278A32D64}" {
+         PivotID "button_left_Down"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C90}" {
+        ContextName "AddTarget"
+        Position PointInfo "{626965E278A32C91}" {
+         PivotID "button_right_Up"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C8E}" {
+        ContextName "RemoveTarget"
+        Position PointInfo "{626965E278A32C8F}" {
+         PivotID "button_right_Down"
+        }
+       }
+      }
+      additionalActions {
+       SCR_SetTargetsModeUserAction "{626965E278A32CB8}" {
+        ParentContextList {
+         "StartRound"
+        }
+        VisibilityRange 2
+        Duration 0.5
+       }
+       SCR_SetTargetDistanceUpUserAction "{626965E278A32CB7}" {
+        ParentContextList {
+         "DistanceUp"
+        }
+        VisibilityRange 2
+       }
+       SCR_SetTargetDistanceDownUserAction "{626965E278A32CA8}" {
+        ParentContextList {
+         "DistanceDown"
+        }
+        VisibilityRange 2
+       }
+       SCR_AddTarget "{626965E278A32CA0}" {
+        ParentContextList {
+         "AddTarget"
+        }
+        VisibilityRange 2
+       }
+       SCR_RemoveTarget "{626965E278A32CDC}" {
+        ParentContextList {
+         "RemoveTarget"
+        }
+        VisibilityRange 2
+       }
+      }
+     }
+     RplComponent "{6524A3A870AD607B}" {
+     }
+     Hierarchy "{626965E278A32CD6}" {
+     }
+    }
+    Flags 0x403 0
+    coords 0.045 0.005 0.131
+    angles 0 180 0
+    m_iTargetsInRound 10
+    {
+     SCR_FiringRangeLineArea {
+      components {
+       RplComponent "{6524A3A84BD2724F}" {
+       }
+      }
+      coords 0.064 -0.003 0.066
+      angles 0 -122.496 0
+     }
+     $grp SCR_FiringRangeTarget : "{379D34B0D41DA810}Prefabs/Props/Military/Training/TargetInfantry_01.et" {
+      TGT_INF_300a13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 8 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_100e13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -5.999 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100a13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 10 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100b13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 6.001 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100c13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 2 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_300b13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 4.001 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_300c13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 0.001 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_200a13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 6.001 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200b13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 2 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200c13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -2 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_300d13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -4 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_Indicator13 {
+       coords 6.148 -0.005 -0.941
+       angles 0 -15.679 0
+       scale 0.75
+       m_iTargetDistance 1
+       m_bIsIndicator 1
+      }
+      TGT_INF_100d13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -2 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_200d13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -5.999 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200e13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -10 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_300e13 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -7.999 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+     }
+    }
+   }
+   GenericEntity : "{8EF8C31221A768DE}Prefabs/Plywood_Wall.et" {
+    coords -2.095 -1.667 0.426
+    angles 0 -90 0
+   }
+   GenericEntity : "{BCB7A2B99B8F2511}Prefabs/Props/Military/Sandbags/Sandbag_01_empty_plastic.et" {
+    coords -3.5 0 -0.747
+    angles 0 -90 0
+    scale 4
+   }
+  }
+ }
+ {
+  coords 8060 603.031 2383.453
+  {
+   SCR_FiringRangeController {
+    components {
+     SignalsManagerComponent "{626965E278A32E1A}" {
+     }
+     MeshObject "{626965E278A32D9F}" {
+      Object "{AD51E776526588CC}Assets/Structures/Military/Training/RangeCP_01/RangeCP_01.xob"
+     }
+     RigidBody "{626965E278A32DA6}" {
+      ModelGeometry 1
+      Static 1
+     }
+     ProcAnimComponent "{626965E278A32DF1}" {
+      Parameters {
+       ProcAnimParams "{626965E278A32DF3}" {
+        ResourceName "{45EF0AFFC6C42B29}Assets/Structures/Military/Training/RangeCP_01/RangeCP_01.pap"
+        BoneNames {
+         "Number_04"
+         "Number_03"
+         "Number_02"
+         "Number_01"
+         "Number_08"
+         "Number_07"
+         "Number_06"
+         "Number_05"
+         "Button_start"
+        }
+        SimulationDistance 820
+       }
+      }
+     }
+     SCR_SoundDataComponent "{626965E278A32D00}" {
+      m_aAudioSourceConfiguration {
+       SCR_AudioSourceConfiguration "{626965E278A32D1A}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_ROUNDSTART"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D1C}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_ROUNDABORT"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D17}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_STARTBUTTON"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D09}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_CHANGETARGET"
+       }
+       SCR_AudioSourceConfiguration "{626965E278A32D02}" {
+        m_sSoundProject "{5A46144CB8BFC66B}Sounds/Structures/Military/Training/RangeCP/Structures_RangeCP.acp"
+        m_sSoundEventName "SOUND_RANGECP_CHANGEDISTANCE"
+       }
+      }
+     }
+     SlotManagerComponent "{626965E278A32D23}" {
+      Slots {
+       EntitySlotInfo LightOn {
+        PivotID "light_001_power"
+        Prefab "{56F1E8C98C929662}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_white.et"
+       }
+       EntitySlotInfo LightError {
+        PivotID "light_003_malfunction"
+        Prefab "{E1D83AE676A5F192}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_red.et"
+       }
+       EntitySlotInfo LightSequence {
+        PivotID "light_002_sequence"
+        Prefab "{98F91DBF4663F101}Prefabs/Structures/Military/Training/RangeCP_01/RangeCP_01_light_green.et"
+       }
+      }
+     }
+     ActionsManagerComponent "{626965E278A32CD3}" {
+      ActionContexts {
+       UserActionContext "{626965E278A32D79}" {
+        ContextName "StartRound"
+        Position PointInfo "{626965E278A32D44}" {
+         PivotID "Button_start"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32D74}" {
+        ContextName "DistanceUp"
+        Position PointInfo "{626965E278A32D75}" {
+         PivotID "button_left_Up"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C9B}" {
+        ContextName "DistanceDown"
+        Position PointInfo "{626965E278A32D64}" {
+         PivotID "button_left_Down"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C90}" {
+        ContextName "AddTarget"
+        Position PointInfo "{626965E278A32C91}" {
+         PivotID "button_right_Up"
+        }
+        Radius 2
+       }
+       UserActionContext "{626965E278A32C8E}" {
+        ContextName "RemoveTarget"
+        Position PointInfo "{626965E278A32C8F}" {
+         PivotID "button_right_Down"
+        }
+       }
+      }
+      additionalActions {
+       SCR_SetTargetsModeUserAction "{626965E278A32CB8}" {
+        ParentContextList {
+         "StartRound"
+        }
+        VisibilityRange 2
+        Duration 0.5
+       }
+       SCR_SetTargetDistanceUpUserAction "{626965E278A32CB7}" {
+        ParentContextList {
+         "DistanceUp"
+        }
+        VisibilityRange 2
+       }
+       SCR_SetTargetDistanceDownUserAction "{626965E278A32CA8}" {
+        ParentContextList {
+         "DistanceDown"
+        }
+        VisibilityRange 2
+       }
+       SCR_AddTarget "{626965E278A32CA0}" {
+        ParentContextList {
+         "AddTarget"
+        }
+        VisibilityRange 2
+       }
+       SCR_RemoveTarget "{626965E278A32CDC}" {
+        ParentContextList {
+         "RemoveTarget"
+        }
+        VisibilityRange 2
+       }
+      }
+     }
+     RplComponent "{6524A3A870AD607B}" {
+     }
+     Hierarchy "{626965E278A32CD6}" {
+     }
+    }
+    Flags 0x403 0
+    coords 0.045 0.005 0.131
+    angles 0 180 0
+    m_iTargetsInRound 10
+    {
+     SCR_FiringRangeLineArea {
+      components {
+       RplComponent "{6524A3A84BD2724F}" {
+       }
+      }
+      coords 0.064 -0.003 0.066
+      angles 0 -122.496 0
+     }
+     $grp SCR_FiringRangeTarget : "{379D34B0D41DA810}Prefabs/Props/Military/Training/TargetInfantry_01.et" {
+      TGT_INF_300a14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 8 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_100e14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -5.999 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100a14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 10 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100b14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 6.001 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_100c14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 2 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_300b14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 4.001 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_300c14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 0.001 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_INF_200a14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 6.001 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200b14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords 2 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200c14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -2 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_300d14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -4 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+      TGT_Indicator14 {
+       coords 6.148 -0.005 -0.941
+       angles 0 -15.679 0
+       scale 0.75
+       m_iTargetDistance 1
+       m_bIsIndicator 1
+      }
+      TGT_INF_100d14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -2 -3.067 -900
+       angles 0 0 0
+       m_iTargetDistance 900
+      }
+      TGT_INF_200d14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -5.999 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_200e14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -10 -3.067 -1100
+       angles 0 0 0
+       m_iTargetDistance 1100
+       m_fTimeInErectedPosition 3.5
+      }
+      TGT_INF_300e14 {
+       components {
+        ProcAnimComponent "{51A276D49FB75B53}" {
+         Parameters {
+          ProcAnimParams "{51A276D49AB6138D}" {
+           SimulationDistance 1600
+          }
+         }
+        }
+       }
+       coords -7.999 -3.067 -1300
+       angles 0 0 0
+       m_iTargetDistance 1300
+       m_fTimeInErectedPosition 4
+      }
+     }
+    }
+   }
+   GenericEntity : "{8EF8C31221A768DE}Prefabs/Plywood_Wall.et" {
+    coords -2.095 -1.667 0.426
+    angles 0 -90 0
+   }
+   GenericEntity : "{BCB7A2B99B8F2511}Prefabs/Props/Military/Sandbags/Sandbag_01_empty_plastic.et" {
+    coords -3.5 0 -0.747
+    angles 0 -90 0
+    scale 4
+   }
+  }
+ }
+}
