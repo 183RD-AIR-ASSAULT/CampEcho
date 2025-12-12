@@ -393,10 +393,6 @@ $grp SCR_FiringRangeManager : "{214BCC72DBBE1CB0}Prefabs/Props/Military/Training
      }
     }
    }
-   GenericEntity : "{8EF8C31221A768DE}Prefabs/Plywood_Wall.et" {
-    coords -2.095 -1.667 0.426
-    angles 0 -90 0
-   }
    GenericEntity : "{BCB7A2B99B8F2511}Prefabs/Props/Military/Sandbags/Sandbag_01_empty_plastic.et" {
     coords -3.5 0 -0.747
     angles 0 -90 0
@@ -797,10 +793,6 @@ $grp SCR_FiringRangeManager : "{214BCC72DBBE1CB0}Prefabs/Props/Military/Training
       }
      }
     }
-   }
-   GenericEntity : "{8EF8C31221A768DE}Prefabs/Plywood_Wall.et" {
-    coords -2.095 -1.667 0.426
-    angles 0 -90 0
    }
    GenericEntity : "{BCB7A2B99B8F2511}Prefabs/Props/Military/Sandbags/Sandbag_01_empty_plastic.et" {
     coords -3.5 0 -0.747
