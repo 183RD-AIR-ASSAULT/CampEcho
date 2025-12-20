@@ -170,7 +170,7 @@ $grp StaticModelEntity : "{68CA807F237FFB7A}Prefabs/Structures/Infrastructure/To
   scale 1.4
  }
  {
-  coords 2257.365 795.032 1283.48
+  coords 2257.365 797.048 1283.48
   angles 0 24.216 0
   scale 1.84
  }
@@ -504,7 +504,7 @@ $grp GenericEntity : "{8F96FDAEECD24690}Prefabs/Structures/Infrastructure/Towers
     LV 3.56
    }
   }
-  coords 2262.095 866.027 1285.319
+  coords 2262.095 799.585 1285.319
  }
  {
   components {
@@ -513,7 +513,7 @@ $grp GenericEntity : "{8F96FDAEECD24690}Prefabs/Structures/Infrastructure/Towers
     LV 3.56
    }
   }
-  coords 2252.643 866.034 1281.705
+  coords 2252.643 795.623 1281.705
  }
  {
   components {
