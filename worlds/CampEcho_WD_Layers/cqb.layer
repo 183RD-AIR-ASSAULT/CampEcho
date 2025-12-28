@@ -3266,7 +3266,7 @@ $grp SplineShapeEntity {
   coords 3733.546 539.375 5845.546
   Points {
    ShapePoint "{666CF418B328B38E}" {
-    Position -5.395 0 0
+    Position -1.108 0 0
    }
    ShapePoint "{666CF418B328523B}" {
     Position -480.52 0 0
@@ -3281,7 +3281,7 @@ $grp SplineShapeEntity {
       coords 0 0 0
       SplinePoints {
        ShapePoint "{556C6554868CB1B0}" {
-        Position -5.395 0 0
+        Position -1.108 0 0
        }
        ShapePoint "{556C6554868CB0CE}" {
         Position -480.52 0 0
@@ -6508,7 +6508,7 @@ $grp SCR_DestructibleBuildingEntity : "{5D6D34810978F2D9}Prefabs/Structures/Hous
  }
 }
 SCR_DestructibleBuildingEntity : "{5ECE42250DAB009E}PrefabLibrary/DefaultLibrary/Structures/Houses/House_Prefab_2I01/House_Prefab_2I01.et" {
- coords 3775.612 -0.001 5840.01
+ coords 3775.612 0.206 5840.01
  angles 0 111.899 0
 }
 SCR_DestructibleBuildingEntity : "{5F2672105DA102DB}PrefabLibrary/DefaultLibrary/Structures/Services/MunicipalOffice_E_01.et" {

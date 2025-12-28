@@ -12448,7 +12448,7 @@ $grp SplineShapeEntity {
     Position -8.269 0 33.287
    }
    ShapePoint "{66F74CE4F5170ADE}" {
-    Position -10.714 0 47.68
+    Position -9.066 0 52.682
    }
   }
   {
@@ -12474,7 +12474,7 @@ $grp SplineShapeEntity {
         Position -8.269 0 33.287
        }
        ShapePoint "{66F74CE4F750E1E1}" {
-        Position -10.714 0 47.68
+        Position -9.066 0 52.682
        }
       }
       IsClosedSpline 0
@@ -12708,7 +12708,7 @@ $grp GenericEntity : "{75AAD1225BA4BFFD}PrefabLibrary/DefaultLibrary/Props/Milit
 }
 $grp GenericEntity : "{7CE9A9DA3C281809}PrefabLibrary/collum.et" {
  {
-  coords 6744.986 599.969 3790.125
+  coords 6744.986 599.969 3792.345
   angles 0 180 0
   {
    GenericEntity {
@@ -12763,7 +12763,7 @@ $grp GenericEntity : "{7CE9A9DA3C281809}PrefabLibrary/collum.et" {
  }
 }
 GenericEntity : "{7CE9A9DA3C28180A}PrefabLibrary/line.et" {
- coords 6712.431 599.969 3766.221
+ coords 6712.431 599.969 3776.915
  angles 0 180 0
  {
   GenericEntity {
