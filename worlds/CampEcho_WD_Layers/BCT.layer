@@ -1,3 +1,24 @@
+GenericEntity {
+ components {
+  MaterialParamsComponent "{66EB2201FEBCC1D5}" {
+   ColorAlbedo 0.491 0.491 0.491 1
+   ColorEmissive 0.6376 0.6376 0.6376 1
+  }
+  MeshObject "{66EB2206ACFE2D59}" {
+   Object "{AEAB1E89AE509953}Assets/billboard183/roadsign.xob"
+   Materials {
+    MaterialAssignClass "{6736F427CF38D944}" {
+     SourceMaterial "billboard_Mat"
+     AssignedMaterial "{C9B5FA6982383014}Assets/billboard183/jumprange.emat"
+    }
+   }
+   PixelSizeScale 0.73
+  }
+ }
+ coords 6794.857 600.063 4184.417
+ angles 0 270 0
+ scale 0.093
+}
 $grp PolylineShapeEntity {
  {
   coords 6964.958 619.862 3677.59
@@ -9262,7 +9283,7 @@ $grp SplineShapeEntity {
     Position 0 0.002 0
    }
    ShapePoint "{6670A6FDD456995A}" {
-    Position 5 0 440
+    Position 5 0 401.096
    }
   }
   {
@@ -12064,7 +12085,7 @@ $grp SplineShapeEntity {
   coords 7156.545 631.375 4077.416
   Points {
    ShapePoint "{6670A6C4C44EF906}" {
-    Position 0 0 0
+    Position 1040.264 45.878 0
    }
    ShapePoint "{6670A6C4C44EB61F}" {
     Position -250 0 0
@@ -12994,6 +13015,10 @@ $grp GenericEntity : "{D5E8C724DB3DA81C}Prefabs/Props/VRTCQBShootHouse/CQB_Targe
   coords 6728.104 600 4084.067
   angles 0 -30.158 0
  }
+}
+SCR_DestructibleBuildingEntity : "{E0D823883B9C3E26}Prefabs/Structures/Military/Houses/GuardHouse_03/GuardHouse_03_white.et" {
+ coords 6780 0.048 4192.626
+ angles 0 270 0
 }
 GenericEntity : "{F08356DBFA4BACF9}PrefabLibrary/pltwedge.et" {
  coords 6745.856 599.97 3821.591
